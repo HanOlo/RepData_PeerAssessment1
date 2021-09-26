@@ -7,20 +7,20 @@ activity <- read_csv("activity.csv")
 
 ### Histogram of the total number of steps taken each day
 
-Plot 1 -  Histogram of the total number of steps taken each day  
+Plot 1 -  Histogram of the total number of steps taken each day   
 ![Image1](plot1.png)  
   
 
 ### Mean and median number of steps taken each day
   
-Plot 2 - Mean and median number of steps taken each day
+Plot 2 - Mean and median number of steps taken each day  
 ![Image2](plot2.png)   
 
 
 
 ###  Time series plot of the average number of steps taken
 
-Plot 3 - Time series plot of the average number of steps taken
+Plot 3 - Time series plot of the average number of steps taken  
 ![Image3](plot3.png)
 
 
@@ -42,7 +42,7 @@ lines 131-169
 
 ### Histogram of the total number of steps taken each day after missing values are imputed
 
-Plot 4 - Histogram of the total number of steps taken each day after missing values are imputed
+Plot 4 - Histogram of the total number of steps taken each day after missing values are imputed  
 ![Image4](plot4.png)  
 
 
