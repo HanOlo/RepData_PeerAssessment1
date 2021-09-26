@@ -12,7 +12,7 @@ Plot3.png
 
 
 ## What is the average daily activity pattern?
-
+It appears that on most days there are an average of 40 steps per day.  
 
 
 ## Imputing missing values
@@ -25,5 +25,6 @@ lines 131-169
 
 
 ## Are there differences in activity patterns between weekdays and weekends?
-People appear to move more on the weekend
+People appear to move more on the weekend  
+lines 191-222  
 ![Image5](plot5.png)
