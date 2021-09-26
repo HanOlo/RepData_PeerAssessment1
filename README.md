@@ -1,15 +1,6 @@
 ## Updated file to describe the project
 
 
-
-
-
-
-Plot 5 -  Panel plot comparing the average number of steps taken per 5-minute interval across weekdays and weekends
-![Image5](plot5.png)  
-
-
-
 ## Load Data
 activity <- read_csv("activity.csv")
 
