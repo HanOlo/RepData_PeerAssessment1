@@ -202,10 +202,10 @@ prob_7 <- bind_rows(prob_7_a, prob_7_b) %>%
   ggplot() +
   geom_point(aes(x=interval, y=avg, color = wk) )+
   theme_bw() +
-  labs(title = "Average Steps Taken by Date",
+  labs(title = "Average Steps Taken by Interval",
        y = "Average Steps",
-       x= "Date") +
-  facet_wrap(~wk)
+       x= "Interval") +
+  facet_wrap(~wk, dir="v")
 
 
 ```
