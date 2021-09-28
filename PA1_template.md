@@ -119,7 +119,7 @@ geom_histogram(aes(x=total))
 ## Warning: Removed 8 rows containing non-finite values (stat_bin).
 ```
 
-![](PA1_template_files/figure-html/prob2-1.png)<!-- -->
+![Image1](plot1.png)  <!-- -->
 
 ```r
 #dev.off()
@@ -152,7 +152,7 @@ summarize(mean = mean(steps),
 ## Warning: Removed 8 rows containing missing values (geom_point).
 ```
 
-![](PA1_template_files/figure-html/prob3-1.png)<!-- -->
+![Image3](plot2.png)  <!-- -->
 
 ```r
 #dev.off()
@@ -181,7 +181,7 @@ geom_point(aes(x=date, y=avg), color = "blue")+
 ## Warning: Removed 8 rows containing missing values (geom_point).
 ```
 
-![](PA1_template_files/figure-html/prob4-1.png)<!-- -->
+![Image4](plot3.png)  <!-- -->
 
 ```r
 #dev.off()
@@ -289,7 +289,7 @@ geom_histogram(aes(x=total))
 ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
 ```
 
-![](PA1_template_files/figure-html/prob7-1.png)<!-- -->
+![Image5](plot4.png)<!-- -->
 
 ```r
 #dev.off()
@@ -335,7 +335,7 @@ prob_7 <- bind_rows(prob_7_a, prob_7_b) %>%
   facet_wrap(~wk, dir="v")
 ```
 
-![](PA1_template_files/figure-html/prob8-1.png)<!-- -->
+![Image5](plot5.png)<!-- -->
 
 ```r
 #  dev.off()
