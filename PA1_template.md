@@ -105,7 +105,7 @@ prob2 <- activity %>%
 group_by(date) %>% 
 summarize(total = sum(steps)) 
 
-
+#png(filename="plot1.png")
 prob2 %>% 
 ggplot() +
 geom_histogram(aes(x=total))
@@ -121,6 +121,10 @@ geom_histogram(aes(x=total))
 
 ![](PA1_template_files/figure-html/prob2-1.png)<!-- -->
 
+```r
+#dev.off()
+```
+
 
 
 
@@ -128,6 +132,7 @@ geom_histogram(aes(x=total))
 
 
 ```r
+#png(filename="plot2.png")
 activity %>% 
 group_by(date) %>% 
 summarize(mean = mean(steps),
@@ -149,6 +154,10 @@ summarize(mean = mean(steps),
 
 ![](PA1_template_files/figure-html/prob3-1.png)<!-- -->
 
+```r
+#dev.off()
+```
+
 
 
 
@@ -156,6 +165,7 @@ summarize(mean = mean(steps),
 
 
 ```r
+#png(filename = "plot3.png")
 activity %>% 
 group_by(date) %>% 
 summarize(avg = mean(steps)) %>% 
@@ -173,10 +183,14 @@ geom_point(aes(x=date, y=avg), color = "blue")+
 
 ![](PA1_template_files/figure-html/prob4-1.png)<!-- -->
 
+```r
+#dev.off()
+```
+
 
 
 ### 5. The 5-minute interval that, on average, contains the maximum number of steps
-
+#### The maximum 5 minute average interval was 2355.
 
 ```r
 activity %>% 
@@ -263,6 +277,7 @@ prob_6_3 <- prob6_2 %>%
 
 
 ```r
+#png(filename = "plot4.png")
 prob_6_3 %>% 
 group_by(date) %>% 
 summarize(total = sum(steps)) %>% 
@@ -275,6 +290,10 @@ geom_histogram(aes(x=total))
 ```
 
 ![](PA1_template_files/figure-html/prob7-1.png)<!-- -->
+
+```r
+#dev.off()
+```
 
 
 
@@ -305,6 +324,7 @@ prob_7 <- bind_rows(prob_7_a, prob_7_b) %>%
 ```
 
 ```r
+#png(filename = "plot5.png")
   prob_7 %>% 
   ggplot() +
   geom_point(aes(x=interval, y=avg, color = wk) )+
@@ -316,6 +336,10 @@ prob_7 <- bind_rows(prob_7_a, prob_7_b) %>%
 ```
 
 ![](PA1_template_files/figure-html/prob8-1.png)<!-- -->
+
+```r
+#  dev.off()
+```
 
 
 

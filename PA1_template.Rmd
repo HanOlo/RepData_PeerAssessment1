@@ -59,10 +59,11 @@ prob2 <- activity %>%
 group_by(date) %>% 
 summarize(total = sum(steps)) 
 
-
+#png(filename="plot1.png")
 prob2 %>% 
 ggplot() +
 geom_histogram(aes(x=total))
+#dev.off()
 ```
 
 
@@ -71,6 +72,8 @@ geom_histogram(aes(x=total))
 ### 3. Mean and median number of steps taken each day
 
 ```{r prob3}
+
+#png(filename="plot2.png")
 activity %>% 
 group_by(date) %>% 
 summarize(mean = mean(steps),
@@ -82,6 +85,7 @@ summarize(mean = mean(steps),
   labs(title = "Mean and Median Steps per Day",
        y = "Steps",
        x = "Date")
+#dev.off()
   
        
 ```
@@ -93,6 +97,8 @@ summarize(mean = mean(steps),
 
 ```{r prob4}
 
+
+#png(filename = "plot3.png")
 activity %>% 
 group_by(date) %>% 
 summarize(avg = mean(steps)) %>% 
@@ -102,13 +108,14 @@ geom_point(aes(x=date, y=avg), color = "blue")+
   labs(title = "Average Steps Taken by Date",
        y = "Average Steps",
        x= "Date")
+#dev.off()
 
 ```
 
 
 
 ### 5. The 5-minute interval that, on average, contains the maximum number of steps
-
+#### The maximum 5 minute average interval was 2355.
 ```{r prob5}
 
 activity %>% 
@@ -166,11 +173,14 @@ prob_6_3 <- prob6_2 %>%
 ### 7. Histogram of the total number of steps taken each day after missing values are imputed
 
 ```{r prob7}
+
+#png(filename = "plot4.png")
 prob_6_3 %>% 
 group_by(date) %>% 
 summarize(total = sum(steps)) %>% 
 ggplot() +
 geom_histogram(aes(x=total))
+#dev.off()
 
 
 ```
@@ -197,7 +207,7 @@ prob_7 <- bind_rows(prob_7_a, prob_7_b) %>%
   group_by(interval, wk) %>% 
   summarize(avg = mean(steps))
   
-  
+#png(filename = "plot5.png")
   prob_7 %>% 
   ggplot() +
   geom_point(aes(x=interval, y=avg, color = wk) )+
@@ -206,6 +216,7 @@ prob_7 <- bind_rows(prob_7_a, prob_7_b) %>%
        y = "Average Steps",
        x= "Interval") +
   facet_wrap(~wk, dir="v")
+#  dev.off()
 
 
 ```
