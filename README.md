@@ -1,5 +1,6 @@
 ## Updated file to describe the project
-
+### CLICK THIS LINK TO VIEW HTML FROM REPO  ######
+https://htmlpreview.github.io/?https://github.com/HanOlo/RepData_PeerAssessment1/blob/master/PA1_template.html
 
 ## Load Data
 activity <- read_csv("activity.csv")
