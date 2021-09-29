@@ -62,7 +62,8 @@ summarize(total = sum(steps))
 #png(filename="plot1.png")
 prob2 %>% 
 ggplot() +
-geom_histogram(aes(x=total))
+geom_col(aes(x=date, y=total ))+
+  theme_classic()
 #dev.off()
 ```
 
@@ -179,7 +180,8 @@ prob_6_3 %>%
 group_by(date) %>% 
 summarize(total = sum(steps)) %>% 
 ggplot() +
-geom_histogram(aes(x=total))
+geom_col(aes(x=date, y=total ))+
+  theme_classic()
 #dev.off()
 
 
