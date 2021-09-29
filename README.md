@@ -8,7 +8,9 @@ https://htmlpreview.github.io/?https://github.com/HanOlo/RepData_PeerAssessment1
 
 Or open [PA1_template.md](./PA1_template.md)
 
-## Load Data
+Or view highlights from below
+
+## Code to load files
 activity <- read_csv("activity.csv")
 
 
@@ -18,7 +20,7 @@ Plot 1 -  Histogram of the total number of steps taken each day
 ![Image1](plot1.png)  
   
 
-### Mean and median number of steps taken each day
+### Mean and median number of steps taken each day 
   
 Plot 2 - Mean and median number of steps taken each day  
 ![Image2](plot2.png)   
@@ -58,3 +60,5 @@ Plot 4 - Histogram of the total number of steps taken each day after missing val
 People appear to move more on the weekend.    
 lines 191-222  
 ![Image5](plot5.png)
+
+### View R Code by clicking on either of the links above.
