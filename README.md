@@ -1,7 +1,16 @@
-## Updated file to describe the project
+## Updated file to make grading easier.
 
+### Current SHA-1 : 0ae483e806dc356d1a9318beb11ef6d06c06ad0e
+If i update the file I lose any feedback from other graders.  
 
-## Load Data
+### CLICK THIS LINK TO VIEW HTML FROM REPO  ######
+https://htmlpreview.github.io/?https://github.com/HanOlo/RepData_PeerAssessment1/blob/master/PA1_template.html
+
+Or open [PA1_template.md](./PA1_template.md)
+
+Or view highlights from below
+
+## Code to load files
 activity <- read_csv("activity.csv")
 
 
@@ -11,7 +20,7 @@ Plot 1 -  Histogram of the total number of steps taken each day
 ![Image1](plot1.png)  
   
 
-### Mean and median number of steps taken each day
+### Mean and median number of steps taken each day 
   
 Plot 2 - Mean and median number of steps taken each day  
 ![Image2](plot2.png)   
@@ -51,3 +60,5 @@ Plot 4 - Histogram of the total number of steps taken each day after missing val
 People appear to move more on the weekend.    
 lines 191-222  
 ![Image5](plot5.png)
+
+### View R Code by clicking on either of the links above.

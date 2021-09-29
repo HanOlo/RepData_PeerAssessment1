@@ -116,7 +116,7 @@ geom_col(aes(x=date, y=total ))+
 ## Warning: Removed 8 rows containing missing values (position_stack).
 ```
 
-![](PA1_template_files/figure-html/prob2-1.png)<!-- -->
+![Image1](plot1.png)  <!-- -->
 
 ```r
 #dev.off()
@@ -127,6 +127,7 @@ geom_col(aes(x=date, y=total ))+
 
 ### 3. Mean and median number of steps taken each day
 
+The question asks for the mean and median for **each day**.  Grouped by date and plotted on a chart for ease of viewing.  There are a lot of 0 data points throughout the day which causes the median points to be along the bottom.  
 
 ```r
 #png(filename="plot2.png")
@@ -149,7 +150,7 @@ summarize(mean = mean(steps),
 ## Warning: Removed 8 rows containing missing values (geom_point).
 ```
 
-![](PA1_template_files/figure-html/prob3-1.png)<!-- -->
+![Image3](plot2.png)  <!-- -->
 
 ```r
 #dev.off()
@@ -178,7 +179,7 @@ geom_point(aes(x=date, y=avg), color = "blue")+
 ## Warning: Removed 8 rows containing missing values (geom_point).
 ```
 
-![](PA1_template_files/figure-html/prob4-1.png)<!-- -->
+![Image4](plot3.png)  <!-- -->
 
 ```r
 #dev.off()
@@ -287,7 +288,7 @@ geom_col(aes(x=date, y=total ))+
 ## Warning: Removed 1 rows containing missing values (position_stack).
 ```
 
-![](PA1_template_files/figure-html/prob7-1.png)<!-- -->
+![Image5](plot4.png)<!-- -->
 
 ```r
 #dev.off()
@@ -333,7 +334,7 @@ prob_7 <- bind_rows(prob_7_a, prob_7_b) %>%
   facet_wrap(~wk, dir="v")
 ```
 
-![](PA1_template_files/figure-html/prob8-1.png)<!-- -->
+![Image5](plot5.png)<!-- -->
 
 ```r
 #  dev.off()
