@@ -130,6 +130,7 @@ geom_histogram(aes(x=total))
 
 ### 3. Mean and median number of steps taken each day
 
+The question asks for the mean and median for **each day**.  Grouped by date and plotted on a chart for ease of viewing.  There are a lot of 0 data points throughout the day which causes the median points to be along the bottom.  
 
 ```r
 #png(filename="plot2.png")
