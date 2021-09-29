@@ -1,6 +1,12 @@
-## Updated file to describe the project
+## Updated file to make grading easier.
+
+### Current SHA-1 : 0ae483e806dc356d1a9318beb11ef6d06c06ad0e
+If i update the file I lose any feedback from other graders.  
+
 ### CLICK THIS LINK TO VIEW HTML FROM REPO  ######
 https://htmlpreview.github.io/?https://github.com/HanOlo/RepData_PeerAssessment1/blob/master/PA1_template.html
+
+Or open [PA1_template.md](./PA1_template.md)
 
 ## Load Data
 activity <- read_csv("activity.csv")
