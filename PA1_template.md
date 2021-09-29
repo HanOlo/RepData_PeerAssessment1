@@ -108,15 +108,12 @@ summarize(total = sum(steps))
 #png(filename="plot1.png")
 prob2 %>% 
 ggplot() +
-geom_histogram(aes(x=total))
+geom_col(aes(x=date, y=total ))+
+  theme_classic()
 ```
 
 ```
-## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
-```
-
-```
-## Warning: Removed 8 rows containing non-finite values (stat_bin).
+## Warning: Removed 8 rows containing missing values (position_stack).
 ```
 
 ![](PA1_template_files/figure-html/prob2-1.png)<!-- -->
@@ -282,11 +279,12 @@ prob_6_3 %>%
 group_by(date) %>% 
 summarize(total = sum(steps)) %>% 
 ggplot() +
-geom_histogram(aes(x=total))
+geom_col(aes(x=date, y=total ))+
+  theme_classic()
 ```
 
 ```
-## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+## Warning: Removed 1 rows containing missing values (position_stack).
 ```
 
 ![](PA1_template_files/figure-html/prob7-1.png)<!-- -->
